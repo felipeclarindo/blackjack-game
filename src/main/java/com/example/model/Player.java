@@ -1,16 +1,17 @@
-package com.example;
+package com.example.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
     private int points = 0;
-    private List<Card> cards = new ArrayList<Card>();
+    private List<Card> cards = new ArrayList<>();
     private boolean stop = false;
 
-    public void receiveCard(Card card) {
+    public Card receiveCard(Card card) {
         this.cards.add(card);
         this.points += card.getNumber();
+        return card;
     }
 
     public void stop() {

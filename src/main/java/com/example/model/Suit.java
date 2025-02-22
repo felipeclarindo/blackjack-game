@@ -1,6 +1,6 @@
-package com.example;
+package com.example.model;
 
-public enum Naipe {
+public enum Suit {
     Hearts,
     Spades,
     Diamonds,
